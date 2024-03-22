@@ -1,0 +1,86 @@
+:root {
+    --navbar-color: #404040;
+    --purple-pink: #ac00e6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Kumbh Sans';
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 55px;
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 100%;
+    float: left;
+}
+
+.logo__link {
+    width: 6%;
+    border-radius: 40px;
+    background: rgba(172, 0, 230, 0);
+    transition: 300ms;
+}
+
+.logo__link:hover {
+    background: rgba(172, 0, 230, .5);
+    background-position: left bottom;
+}
+
+
+.logo__link img{
+    cursor: pointer;
+}
+
+
+.cool__link {
+
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cool__link:hover {
+    color: var(--purple-pink);
+    cursor: pointer;
+}
+
+.cool__link::after {
+    content: '';
+    height: 2px;
+    width: 0px;
+    background: var(--purple-pink);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    transition: 300ms;
+}
+
+.cool__link:hover::after {
+    width: 100%;
+    left: 0%;
+}

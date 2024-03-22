@@ -1,0 +1,2 @@
+nav bar color - #404040
+link hover color - #ac00e6
