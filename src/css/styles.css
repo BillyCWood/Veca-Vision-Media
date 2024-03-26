@@ -89,6 +89,10 @@ nav {
     left: 0%;
 }
 
+.icon {
+    display: none;
+}
+
 #footer {
     background-color: var(--navbar-color);
     min-height: 50px;
@@ -153,6 +157,13 @@ nav {
 
 @media screen and (max-width: 600px) {
 
-   #top-nav-bar a:not(:first-child){display: none;}
+   .cool__link{display: none;}
+
+   .icon {
+    display: flex;
+    color: white;
+   }
+
+   
     
 }
