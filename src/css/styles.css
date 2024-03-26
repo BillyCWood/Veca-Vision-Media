@@ -129,6 +129,12 @@ nav {
     font-weight: 100;
 }
 
+.contact a {
+
+    font-weight: 100;
+    color: white;
+}
+
 .socialIcons, .subscribe, .contact {
     margin-bottom: 15px;
 }
@@ -142,4 +148,11 @@ nav {
 #copyright p {
     font-size: .63rem;
     font-weight: 100;
+}
+
+
+@media screen and (max-width: 600px) {
+
+   #top-nav-bar a:not(:first-child){display: none;}
+    
 }

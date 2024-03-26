@@ -37,14 +37,17 @@
                 <a href="https://www.linkedin.com/in/jaiden-veca-0a71b6292/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.youtube.com/channel/UC59xCCLBkobyj5wyEphwQmg" target="_blank"><i class="fab fa-youtube-square"></i></a>
             </div>
-            <div class="subscribe">
-                <p>Subscribe</p>
-                <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="email@domain.com" />
-                <input type="submit" id="email__submit" value="Go!" />
-            </div>
+            <form method="post" action="php/connect.php">
+                <div class="subscribe">
+                    <p>Subscribe</p>
+                    <input type="email" id="email" name="email" size="30" placeholder="email@domain.com" required />
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
             <div class="contact">
                 <p>Contact Us</p>
                 <p class="contact__info">(406)595-6899</p>
+                <a href="mailto:veca.vision@gmail.com">veca.vision@gmail.com</a>
             </div>
             
         </footer>
