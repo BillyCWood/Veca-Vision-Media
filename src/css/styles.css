@@ -40,6 +40,18 @@ nav {
     overflow: hidden;
 }
 
+.responsive__nav {
+    display: none;
+}
+
+.responsive__container {
+    display: none;
+}
+
+.hamborger {
+    display: none;
+}
+
 .logo__link img {
     width: 75px;
     float: left;
@@ -92,6 +104,7 @@ nav {
 .icon {
     display: none;
 }
+
 
 #footer {
     background-color: var(--navbar-color);
@@ -157,13 +170,55 @@ nav {
 
 @media screen and (max-width: 600px) {
 
-   .cool__link{display: none;}
+    .topnav {
+        display: none;
+    }
 
-   .icon {
-    display: flex;
-    color: white;
+    .responsive__nav {
+        width: 100%;
+        margin: 0 auto;
+        height: 55px;
+        background-color: var(--navbar-color);
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .responsive__link {
+        display: none;
+    }
+
+    .logo__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+   .hamborger {
+        padding: 15px;
+        float: right;
+        display: block;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
    }
 
-   
-    
+}
+
+@media screen and (max-width: 600px) {
+
+    .responsive__container.active {
+        display: block;
+        background-color: var(--navbar-color);
+    }
+    .responsive__link {
+        display: block;
+        text-decoration: none;
+        padding: 20px 25px 20px 20px;
+        text-align: right;
+        color: var(--text-color);
+        border-bottom: 1px solid var(--purple-pink);
+    }
 }

@@ -1,7 +1,7 @@
-function responsiveNavBar(){
-    var topNav = document.getElementbyId("top-nav-bar");
-    if (topNav.className === "topNav") {
-        topNav.className += " responsive";
-    } else {topNav.className = "topnav"}
+function mobileHamburgerBars(){
+    var topNav = document.getElementById("responsive__container");
+    if (topNav.className === "responsive__container") {
+      topNav.className += " active";
+    } else {topNav.className = "responsive__container";}
 
 }
