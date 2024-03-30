@@ -1,5 +1,9 @@
 :root {
-    --navbar-color: #111;
+    --navbar-color: #1f1f1f;
+    /*
+        nav bar color options #113 or #111(or a lighter shade preferably)
+        #1f1f1f is a candidate
+    */
     --purple-pink: #ac00e6;
     --text-color: #fff;
 }
@@ -106,6 +110,13 @@ nav {
 }
 
 
+
+
+#container {
+    margin-top: 65px;
+}
+
+
 #footer {
     background-color: var(--navbar-color);
     min-height: 50px;
@@ -113,6 +124,10 @@ nav {
     width: 100%;
     display: flex;
     justify-content:space-around ;
+}
+
+#responsive__footer {
+    display: none;
 }
 
 .socialIcons {
@@ -204,6 +219,20 @@ nav {
         right: 0;
         top: 0;
    }
+
+
+   #footer {
+    display: none;
+   }
+
+   #responsive__footer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-left: 20px;
+   }
+
 
 }
 
