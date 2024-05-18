@@ -110,18 +110,38 @@ nav {
 }
 
 
-
+#about_page_divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: lightseagreen;
+}
 
 #container {
-    margin-top: 65px;
+    margin-top: 70px;
+    overflow: scroll;
+    padding-bottom: 7rem;
+}
+
+#container h2 {
+    text-align: center;
+}
+
+#container p {
+    padding: 1rem 4rem 0 4rem;
+    text-align: center;
 }
 
 
 #footer {
     background-color: var(--navbar-color);
-    min-height: 50px;
-    margin-top: auto;
+    height: 5rem;
+    margin-top: 2rem;
     width: 100%;
+    position: absolute;
+    bottom: .63rem;
     display: flex;
     justify-content:space-around ;
 }
@@ -173,6 +193,9 @@ nav {
 
 
 #copyright{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     background: var(--navbar-color);
