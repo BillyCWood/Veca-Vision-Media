@@ -19,11 +19,12 @@
     box-sizing: border-box;
 }
 
-html, body {
+html{
     height: 100%;
 }
 
 body{
+    min-height: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -33,15 +34,20 @@ body{
     color: var(--text-color);
 }
 
+
+
+
+/*  NAV BAR  */
 nav {
     width: 100%;
     margin: 0 auto;
-    height: 55px;
+    height: 3.5rem;
     background-color: var(--navbar-color);
     display: flex;
     justify-content: space-around;
     position: fixed;
     overflow: hidden;
+    z-index: 1;
 }
 
 .responsive__nav {
@@ -109,7 +115,7 @@ nav {
     display: none;
 }
 
-
+/*  MISC  */
 #about_page_divider {
     display: block;
     width: 100%;
@@ -119,10 +125,13 @@ nav {
     background-color: lightseagreen;
 }
 
+
+
+/*  MAIN BODY  */
 #container {
-    margin-top: 70px;
-    overflow: scroll;
-    padding-bottom: 7rem;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
 }
 
 #container h2 {
@@ -134,14 +143,13 @@ nav {
     text-align: center;
 }
 
-
+/*  FOOTER  */
 #footer {
     background-color: var(--navbar-color);
     height: 5rem;
-    margin-top: 2rem;
+    margin-top: auto;
     width: 100%;
-    position: absolute;
-    bottom: .63rem;
+    position: relative;
     display: flex;
     justify-content:space-around ;
 }
@@ -193,8 +201,8 @@ nav {
 
 
 #copyright{
-    position: absolute;
-    bottom: 0;
+    margin-top: 0;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -205,7 +213,7 @@ nav {
     font-weight: 100;
 }
 
-
+/*  RESPONSIVENESS  */
 @media screen and (max-width: 600px) {
 
     .topnav {
@@ -249,11 +257,14 @@ nav {
    }
 
    #responsive__footer {
-    margin-top: 1rem;
+    margin-top: auto;
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     float: left;
     padding-left: 20px;
+    background-color: var(--navbar-color);
    }
 
 
