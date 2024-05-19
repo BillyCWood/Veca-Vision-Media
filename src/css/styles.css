@@ -177,6 +177,35 @@ nav {
 
 }
 
+
+/* FORMS */
+
+#contact_form {
+    width: 100%;
+    background-color: var(--navbar-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    
+    
+}
+
+
+#contact_form input {
+    width: 23rem;
+}
+
+#contact_form textarea {
+    width: 23rem;
+    overflow: scroll;
+}
+
+#quest-com {
+    height: 10rem;
+    overflow: scroll;
+}
+
+
 /*  FOOTER  */
 #footer {
     background-color: var(--navbar-color);
