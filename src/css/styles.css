@@ -205,6 +205,13 @@ nav {
     overflow: scroll;
 }
 
+.submit_button {
+    border: none;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: white;
+}
 
 /*  FOOTER  */
 #footer {
@@ -239,6 +246,15 @@ nav {
 
 .subscribe {
     margin-top: 10px;
+}
+
+.subscribe button {
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 1.25rem;
+
 }
 
 .contact {
