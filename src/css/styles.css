@@ -211,6 +211,7 @@ nav {
     width: 5rem;
     height: 2rem;
     background-color: white;
+    cursor: pointer;
 }
 
 /*  FOOTER  */
@@ -254,6 +255,7 @@ nav {
     border-radius: 1rem;
     width: 4rem;
     height: 1.25rem;
+    cursor: pointer;
 
 }
 
