@@ -84,7 +84,7 @@ nav {
 }
 
 
-.cool__link {
+.cool__link:nth-child(2) {
     color: var(--text-color);
     padding: 20px;
     text-decoration: none;
@@ -92,12 +92,106 @@ nav {
     position: relative;
 }
 
-.cool__link:hover {
+.cool__link:hover:nth-child(2) {
+    color: var(--vvm-teal);
+    cursor: pointer;
+}
+
+.cool__link:nth-child(2)::after {
+    content: '';
+    height: 2px;
+    width: 0px;
+    background: var(--vvm-teal);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    transition: 300ms;
+}
+
+.cool__link:hover:nth-child(2)::after {
+    width: 100%;
+    left: 0%;
+}
+
+
+.cool__link:nth-child(3) {
+    color: var(--text-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cool__link:hover:nth-child(3) {
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+.cool__link:nth-child(3)::after {
+    content: '';
+    height: 2px;
+    width: 0px;
+    background: lightskyblue;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    transition: 300ms;
+}
+
+.cool__link:hover:nth-child(3)::after {
+    width: 100%;
+    left: 0%;
+}
+
+
+
+.cool__link:nth-child(4) {
+    color: var(--text-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cool__link:hover:nth-child(4) {
+    color: var(--vvm-blue);
+    cursor: pointer;
+}
+
+.cool__link:nth-child(4)::after {
+    content: '';
+    height: 2px;
+    width: 0px;
+    background: var(--vvm-blue);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    transition: 300ms;
+}
+
+.cool__link:hover:nth-child(4)::after {
+    width: 100%;
+    left: 0%;
+}
+
+
+.cool__link:nth-child(5) {
+    color: var(--text-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cool__link:hover:nth-child(5) {
     color: var(--purple-pink);
     cursor: pointer;
 }
 
-.cool__link::after {
+.cool__link:nth-child(5)::after {
     content: '';
     height: 2px;
     width: 0px;
@@ -109,7 +203,7 @@ nav {
     transition: 300ms;
 }
 
-.cool__link:hover::after {
+.cool__link:hover:nth-child(5)::after {
     width: 100%;
     left: 0%;
 }
@@ -155,8 +249,19 @@ nav {
     text-align: center;
     color: black;
     display: flex;
-    margin-left: 18.5rem;
-    margin-right: 18.5rem;
+    margin: auto;
+}
+
+
+#unsplash_home_img {
+    width: 45rem;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -60%);
+    margin: auto;
+    overflow-y: hidden;
 }
 
 
@@ -211,6 +316,7 @@ nav {
     width: 5rem;
     height: 2rem;
     background-color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -251,6 +357,7 @@ nav {
 
 .subscribe button {
     background-color: white;
+    color: black;
     border: none;
     border-radius: 1rem;
     width: 4rem;
@@ -288,6 +395,7 @@ nav {
     display: flex;
     justify-content: center;
     background: var(--navbar-color);
+    padding-bottom: 0.5rem;
 }
 #copyright p {
     font-size: .63rem;
@@ -304,11 +412,11 @@ nav {
     .responsive__nav {
         width: 100%;
         margin: 0 auto;
-        height: 55px;
+        height: 3.5rem;
         background-color: var(--navbar-color);
         display: flex;
         justify-content: space-around;
-        position: relative;
+        position: absolute;
         overflow: hidden;
     }
 
@@ -355,6 +463,10 @@ nav {
 
     .responsive__container.active {
         display: block;
+        position: absolute;
+        width: 100%;
+        top: 3.5rem;
+        z-index: 1;
         background-color: var(--navbar-color);
     }
     .responsive__link {
@@ -363,6 +475,18 @@ nav {
         padding: 20px 25px 20px 20px;
         text-align: right;
         color: var(--text-color);
-        border-bottom: 1px solid var(--purple-pink);
+        border-bottom: 1px solid;
+    }
+    .responsive__link:nth-child(1) {
+        border-color: var(--vvm-teal);
+    }
+    .responsive__link:nth-child(2) {
+        border-color: lightskyblue;
+    }
+    .responsive__link:nth-child(3) {
+        border-color: var(--vvm-blue);
+    }
+    .responsive__link:nth-child(4) {
+        border-color: var(--purple-pink);
     }
 }
