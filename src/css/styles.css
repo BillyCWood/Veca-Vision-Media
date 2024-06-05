@@ -322,10 +322,6 @@ nav {
 .vvm-video:not(:first-child) {
     margin-top: 4rem;
 }
-.vvm-video iframe {
-    width: 100%;
-    height: auto;
-}
 #disclaimer {
     font-size: 0.8rem;
 }
