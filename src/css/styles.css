@@ -35,6 +35,12 @@ body{
     display: flex;
     flex-direction: column;
     color: var(--text-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -261,15 +267,17 @@ nav {
     right: 50%;
     transform: translate(50%, -60%);
     margin: auto;
-    overflow-y: hidden;
 }
 
 
 /*  MAIN BODY  */
 #container {
     padding-top: 5rem;
+    padding-bottom: 3rem;
     margin-bottom: 3rem;
     position: relative;
+    overflow: hidden;
+
 }
 
 #container h2 {
@@ -282,6 +290,34 @@ nav {
 
 }
 
+
+/* SERVICES */
+
+#estimate_request {
+    display: relative;
+    background-color: var(--navbar-color);
+    width: 12rem;
+    height: 1.5rem;
+    text-align: center;
+    
+    border-radius: 2rem;
+    margin: auto;
+    
+}
+
+#estimate_request:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px lightblue;
+    transition: 200ms;
+}
+
+
+
+
+
+@media screen and (max-width: 40em){
+    
+}
 
 /* FORMS */
 
@@ -345,7 +381,19 @@ nav {
 }
 
 
-.socialIcons a:hover{
+.socialIcons a:hover:nth-child(2){
+    color: var(--vvm-teal);
+    cursor: pointer;
+}
+.socialIcons a:hover:nth-child(3){
+    color: lightskyblue;
+    cursor: pointer;
+}
+.socialIcons a:hover:nth-child(4){
+    color: var(--vvm-blue);
+    cursor: pointer;
+}
+.socialIcons a:hover:nth-child(5){
     color: var(--purple-pink);
     cursor: pointer;
 }
