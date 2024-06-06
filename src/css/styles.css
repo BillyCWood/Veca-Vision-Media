@@ -26,6 +26,18 @@ html{
     height: 100%;
 }
 
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 body{
     min-height: 100%;
     margin: 0;
@@ -37,6 +49,9 @@ body{
     color: var(--text-color);
     overflow-x: hidden;
 }
+
+
+
 
 a {
     text-decoration: none;
@@ -280,6 +295,8 @@ nav {
     margin-bottom: 3rem;
     position: relative;
     overflow: hidden;
+
+    animation: 2s fadeInUp;
 
 }
 
