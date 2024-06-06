@@ -273,18 +273,16 @@ nav {
 }
 
 
-#img_container {
-    overflow-x: hidden;
-}
 
 #unsplash_home_img {
-    width: 45rem;
+    width: 100vh;
     z-index: -1;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -60%);
     margin: auto;
+    overflow-x: hidden;
 }
 
 
