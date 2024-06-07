@@ -24,6 +24,9 @@
 
 html{
     height: 100%;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -273,28 +276,14 @@ nav {
 }
 
 
-
-#unsplash_home_img {
-    width: 45rem;
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -60%);
-    margin: auto;
-    overflow-x: hidden;
-}
-
-
 /*  MAIN BODY  */
 #container {
-    padding-top: 5rem;
+    padding-top: 3.6rem;
     padding-bottom: 3rem;
     margin-bottom: 3rem;
     position: relative;
-    overflow: hidden;
 
-    animation: 2s fadeInUp;
+ /*   animation: 2.5s fadeInUp; */
 
 }
 
@@ -308,6 +297,31 @@ nav {
 
 }
 
+
+/* SNAP SCROLL */
+section {
+    padding: 5rem;
+    scroll-snap-align: start;
+    position: relative;
+    height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
 
 /* SERVICES */
 #service-list li {
@@ -469,22 +483,6 @@ nav {
     color: white;
 }
 
-
-
-.subscribe {
-    margin-top: 10px;
-}
-
-.subscribe button {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 1rem;
-    width: 4rem;
-    height: 1.25rem;
-    cursor: pointer;
-
-}
 
 .contact {
     padding-top: 1.5rem;
