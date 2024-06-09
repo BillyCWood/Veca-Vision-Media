@@ -29,7 +29,7 @@ html{
     scroll-snap-type: y mandatory;
 }
 
-
+/*
 @keyframes fadeInUp {
     0% {
         transform: translateY(25%);
@@ -40,7 +40,7 @@ html{
         opacity: 1;
     }
 }
-
+*/
 body{
     min-height: 100%;
     margin: 0;
@@ -278,9 +278,20 @@ nav {
 
 /*  MAIN BODY  */
 #container {
-    padding-top: 3.6rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
+    margin-top: 0;
     margin-bottom: 3rem;
+    position: relative;
+
+ /*   animation: 2.5s fadeInUp; */
+
+}
+
+#container_home {
+    padding-bottom: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
     position: relative;
 
  /*   animation: 2.5s fadeInUp; */
@@ -300,19 +311,26 @@ nav {
 
 /* SNAP SCROLL */
 section {
-    padding: 5rem;
+    margin-top: 0;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     scroll-snap-align: start;
     position: relative;
     min-height: 100vh;
     display: grid;
-    place-items: center;
-    align-content: center;
+    text-align: center;
+}
+section a {
+    width: 12rem !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hidden {
     opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
+    filter: blur(10px);
+    transition: all 1.5s;
 }
 
 .show {
@@ -322,18 +340,44 @@ section {
 
 
 /* HOME */
+
 .hero {
     background-image: url("../images/robert-shunev-unsplash.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
+    justify-content: center;
+    align-content: start;
 }
 
 #home-section2 {
+    /* 
+    Top and bottom margin for this section must be this size, 
+    any larger will screw up snap scrolling,
+    removing it will take away the animation
+    */
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url("../images/theregisti-HSXIp58yPyI-unsplash.jpg");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
+    justify-content: center;
+    align-content: start;
+}
+.call_to_action {
+    margin-top: 1rem;
+}
+
+#home-section3 {
+    background-image: url("../images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    justify-content: center;
+    align-content: center;
 }
 
 /* SERVICES */
@@ -346,17 +390,19 @@ section {
     display: relative;
     background-color: var(--navbar-color);
     width: 12rem;
-    height: 1.5rem;
+    height: 2rem;
     text-align: center;
+    align-content: center;
     border-radius: 2rem;
     margin: auto;
-    
+    transition: 200ms;
+    padding: none;
 }
 
 #estimate_request:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 2px lightblue;
-    transition: 200ms;
+    background-color: white;
+    color: black;
 }
 
 
@@ -434,6 +480,11 @@ section {
     position: relative;
     display: flex;
     justify-content:space-around ;
+}
+
+.footer {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: end;
 }
 
 #responsive__footer {
