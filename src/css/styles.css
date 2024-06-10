@@ -413,6 +413,14 @@ section a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
 }
+.photo-list-grid-wrapper {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    max-width: 17rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
 
 .grid-item {
     color: black;
