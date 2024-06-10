@@ -418,8 +418,15 @@ section a {
     row-gap: 1rem;
     column-gap: 1rem;
     max-width: 17rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .video-list-grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
 }
 
 .grid-item {
@@ -570,7 +577,7 @@ section a {
 }
 
 .footer {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-snap-align: end;
 }
 
