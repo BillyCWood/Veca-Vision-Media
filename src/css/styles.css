@@ -330,7 +330,7 @@ section a {
 .hidden {
     opacity: 0;
     filter: blur(10px);
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 .show {
@@ -379,6 +379,29 @@ section a {
     justify-content: center;
     align-content: center;
 }
+
+#estimate_request span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#estimate_request span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#estimate_request:hover span {
+    padding-right: 1rem;
+}
+#estimate_request:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 
 /* SERVICES */
 
